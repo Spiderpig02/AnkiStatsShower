@@ -9,3 +9,8 @@ type Entry struct {
 	SecretKey    string    `json:"secret_key"`
 	Data         string    `json:"data"`
 }
+
+type PostDataRequest struct {
+	SecretKey string `json:"secret_key"`
+	Data      string `json:"data"`
+}
