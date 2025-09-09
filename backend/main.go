@@ -51,4 +51,8 @@ func setupRoutes(r *gin.Engine, handler *transport.Handler) {
 	r.GET("/", func(c *gin.Context) {
 		c.String(200, "Successfully started and running the AnkiStatsShower backend\n")
 	})
+	r.POST("/create_user", handler.CreateUser())
+	r.POST("/post_data", handler.PostData())
+	r.GET("/user_data", handler.GetUserData())
+
 }

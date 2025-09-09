@@ -14,3 +14,8 @@ type PostDataRequest struct {
 	SecretKey string `json:"secret_key"`
 	Data      string `json:"data"`
 }
+
+type UserData struct {
+	Time            time.Time `json:"date"`
+	NumberOfReviews int       `json:"number_of_reviews"`
+}
